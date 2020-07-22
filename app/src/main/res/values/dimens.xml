@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    ///////////////////prevention card
+    <dimen name="card_title_text_size">26dp</dimen>
+    <dimen name="card_description_text_size">18dp</dimen>
+</resources>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeToRefresh"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".tracker.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/topcover"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/card_shape"
+            android:backgroundTint="@color/uppercontainerbackground"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif"
+                android:text="COVID-19"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+
+                android:fontFamily="sans-serif"
+                android:text="India"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_indian"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="90dp"
+                ></ImageView>
+            <TextView
+                android:id="@+id/lastUpdatedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:text="Last Updated"
+                android:textAlignment="viewEnd"
+                android:padding="3dp"
+                android:backgroundTint="#2C3335"
+                android:background="@drawable/rounded_border"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/topContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center"
+                    android:backgroundTint="@color/listbackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/confirmed"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_corona_virus"
+                        android:tint="@color/confirmed" />
+
+                    <TextView
+                        android:id="@+id/confirmedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/confirmed"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/listbackground"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Active  "
+                        android:textAllCaps="true"
+                        android:textColor="@color/active"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_patient"
+                        android:tint="@color/active" />
+
+                    <TextView
+                        android:id="@+id/activeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/active"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topContainer"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/listbackground"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recovered"
+                        android:textAllCaps="true"
+                        android:textColor="@color/recovered"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_heart"
+                        android:tint="@color/recovered" />
+
+                    <TextView
+                        android:id="@+id/recoveredTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/recovered"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center"
+                    android:backgroundTint="@color/listbackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deceased "
+                        android:textAllCaps="true"
+                        android:textColor="@color/deceased"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_death"
+                        android:tint="@color/deceased" />
+
+                    <TextView
+                        android:id="@+id/deceasedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/deceased"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topcover"
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp"
+            android:background="@color/background"
+            tools:listheader="@layout/list_header" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <!-- Main content -->
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Tracker_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="bottom|end"
+                android:elevation="30dp"
+
+                android:backgroundTint="@color/fab_main"
+                android:contentDescription="fab"
+
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_virus"
+                app:rippleColor="@color/recovered" />
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Essentials_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="80dp"
+                android:backgroundTint="@color/fab_extras"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="Essentials"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/ic_essentials"
+                android:textColor="@color/white"
+
+                app:iconTint="@color/recovered"
+                app:rippleColor="@color/recovered" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Prevention_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="134dp"
+                android:backgroundTint="@color/fab_extras"
+                android:contentDescription="fab"
+                android:textColor="@color/white"
+                app:iconTint="@color/recovered"
+
+                android:elevation="30dp"
+                android:text="Prevention"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/ic_prevention"
+                app:rippleColor="@color/recovered" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Symptoms_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/white"
+                app:iconTint="@color/recovered"
+
+                android:layout_marginBottom="188dp"
+                android:backgroundTint="@color/fab_extras"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="Symptoms"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/ic_symptoms"
+
+                app:rippleColor="@color/recovered" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/About_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:textColor="@color/white"
+                app:iconTint="@color/recovered"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="242dp"
+                android:backgroundTint="@color/fab_extras"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="Covid-19"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/ic_corona_virus"
+                app:rippleColor="@color/recovered" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

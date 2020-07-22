@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest package="com.akash.apps.covid_19" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application android:theme="@style/AppTheme" android:supportsRtl="true" android:roundIcon="@drawable/covidicon" android:label="@string/app_name" android:icon="@drawable/covidicon" android:allowBackup="true">
+
+    <activity android:name=".Essentials.EssentialActivity"/>
+
+    <activity android:name=".About.AboutActivity"/>
+
+    <activity android:name=".Symptoms.SymptomActivity"/>
+
+    <activity android:name=".Prevention.PreventionActivity"/>
+
+
+    <activity android:name=".SplashScreenActivity">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+    <activity android:name=".tracker.MainActivity"> </activity>
+
+    <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+
+</application>
+
+</manifest>
