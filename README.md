@@ -16,5 +16,7 @@ India state wise cases tracker Basic knowledge of Covid-19 and cause of spread P
 ![image](https://user-images.githubusercontent.com/47060506/110212973-fb9c9e80-7ec3-11eb-83b1-0437d8c6d710.png)
 
 # App Icons
+![image](https://user-images.githubusercontent.com/47060506/110213044-5afaae80-7ec4-11eb-8ee2-bf6c64c1b1f0.png)
+
 
 
